@@ -12,20 +12,20 @@ if(weight>0):
     st.write("## Your BMI is: {0:.2f} and you are: ".format(bmi), end='')
     if ( bmi < 16):
         st.write("## severely underweight")
-        st.write("### You Need to Gain %.2f Kg weight to have a healthy bmi"%abs(((18.5*sh)-weight)))
+        st.write("### You Need to gain %.2f Kg to have a healthy bmi"%abs(((18.5*sh)-weight)))
 
     elif ( bmi >= 16 and bmi < 18.5):
         st.write("## underweight")
-        st.write("### You Need to Gain %.2f Kg weight to have a healthy bmi"%abs(((18.5*sh)-weight)))
+        st.write("### You Need to gain %.2f Kg to have a healthy bmi"%abs(((18.5*sh)-weight)))
 
     elif ( bmi >= 18.5 and bmi <= 25):
         st.write("## Healthy")
 
     elif ( bmi > 25 and bmi < 30):
         st.write("## overweight")
-        st.write("### You Need to Gain %.2f Kg weight to have a healthy bmi"%abs(((25.0*sh)-weight)))
+        st.write("### You Need to loose %.2f Kg to have a healthy bmi"%abs(((25.0*sh)-weight)))
 
     elif ( bmi >=30):
         st.write("## severely overweight")
-        st.write("### You Need to Gain %.2f Kg weight to have a healthy bmi"%abs(((25.0*sh)-weight)))
+        st.write("### You Need to loose %.2f Kg to have a healthy bmi"%abs(((25.0*sh)-weight)))
     
